@@ -9,7 +9,7 @@
   <body>
     <header class="main-header">
       <section class="main-header-top">
-        <a class="main-header-top-logo">
+        <a class="main-header-top-logo" href="index.html">
           <img src="#" width="" height="" alt="Логотип «Техномарт»">
         </a>
         <span>Поиск:</span>
@@ -46,13 +46,13 @@
       </section>
     </header>
 
-    <main>
+    <main class="container">
       <h1 class="page-title">Перфораторы</h1>
       <ul class="breadcrumbs">
         <li><a class="breadcrumbs-main" href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
-        <li><a>Перфораторы</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -195,6 +195,12 @@
             <a class="button" href="#">12500 P.</a>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">следующая</a></li>
+        </ul>
       </section>
 
       <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
@@ -233,9 +239,9 @@
             Все права защищены
         </p>
         <ul class="footer-social">
-          <li><a href="#" class="social-button">Вконтакте</a></li>
-          <li><a href="#" class="social-button">Фейсбук</a></li>
-          <li><a href="#" class="social-button">Инстаграм</a></li>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
         </ul>
         <p class="footer-feedback">
           <b>Обратная связь:</b>
@@ -248,10 +254,17 @@
       </div>
     </footer>
 
-    <section>
-      <h2>Добавление товара в корзину</h2>
+    <section class="modal modal-basket">
+      <h2 class="visually-hidden">Добавление товара в корзину</h2>
       <p>Товар добавлен в корзину!</p>
       <button type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-login">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <p>Введите свой логин и пароль.</p>
+        <!-- Здесь будет форма -->
+        <button type="button">Закрыть</button>
     </section>
 
   </body>
