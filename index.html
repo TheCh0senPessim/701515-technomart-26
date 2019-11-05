@@ -233,8 +233,6 @@
         </ul>
       </section>
 
-      <!-- Пока не заполнять -->
-
       <section class="about-us">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шопинг начинатся здесь! Огромный выбор товаров для ремонта и <br>
@@ -316,10 +314,24 @@
       <button class="modal-map-close" type="button" aria-label="Закрыть карту">Закрыть</button>
     </section>
 
-    <section class="modal modal-write-us"">
+    <section class="modal modal-write-us">
         <h2 class="visually-hidden">Написать в Техномарт</h2>
-        <!-- Здесь будет форма -->
-        <button type="button" aria-label="Закрыть окно отправки сообщения">Закрыть</button>
+        <form class="user" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="user-mail">Ваш e-mail:</label>
+            <input id="user-mail" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="message-text">Текст письма:</label>
+            <textarea id="message-text" cols="30" rows="6" name="message" placeholder="В свободной форме"></textarea>
+          </p>
+          <button type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button" aria-label="Закрыть окно отправки сообщения">Закрыть</button>
     </section>
 
   </body>
